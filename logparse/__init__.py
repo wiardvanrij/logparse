@@ -21,7 +21,7 @@ def config(type, value):
     config = ConfigParser()
     config.read(user_config)
 
-    # try catch this
+    # try catch this + return
     return config.get(type, value, True)
 
 class ReadFile:
@@ -40,6 +40,7 @@ class ReadFile:
         line_parser = apache_log_parser.make_parser(self.regex)
         with open(self.path, 'r') as f:
             for line in f:
+                # Try catch this..
                 data = line_parser(line)
                 if data['remote_host'] not in self.remote_hosts:
                     self.remote_hosts[data['remote_host']] = 1
