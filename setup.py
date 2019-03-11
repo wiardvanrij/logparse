@@ -10,4 +10,7 @@ setup(name='logparse',
       install_requires=[
           'markdown',
       ],
+      entry_points={
+          'console_scripts': ['logparse=logparse.command_line:main'],
+      },
       zip_safe=False)
