@@ -40,5 +40,3 @@ Just for myself
 - amount of resulsts
 - multiple logfiles
 - ???
-
-
