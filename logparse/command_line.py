@@ -17,3 +17,5 @@ def main():
         parseFile(args.path)
     else:
         print("File does not exist")
+
+      
