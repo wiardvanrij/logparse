@@ -8,7 +8,8 @@ setup(name='logparse',
       license='MIT',
       packages=['logparse'],
       install_requires=[
-          'markdown',
+          'apache_log_parser',
+          'ConfigParser'
       ],
       entry_points={
           'console_scripts': ['logparse=logparse.command_line:main'],
