@@ -9,9 +9,10 @@ setup(name='logparse',
       packages=['logparse'],
       install_requires=[
           'apache_log_parser',
-          'ConfigParser'
+          'ConfigParser',
+          'terminaltables'
       ],
       entry_points={
-          'console_scripts': ['logparse=logparse.command_line:main'],
+          'console_scripts': ['logparse=logparse.core:main'],
       },
       zip_safe=False)
